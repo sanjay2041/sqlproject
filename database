@@ -1,0 +1,20 @@
+CREATE DATABASE project;
+use project;
+CREATE TABLE IF NOT EXISTS `project`.`product` (
+  `productId` INT NOT NULL,
+  `productName` VARCHAR(45) NULL,
+  `minsaleQuantity` INT NULL,
+  `productPrice` INT NULL,
+  `productQuantity` INT NULL,
+  PRIMARY KEY (`productId`))
+ENGINE = InnoDB
+SELECT * FROM product;
+
+// project login
+use project;
+CREATE TABLE IF NOT EXISTS `project`.`login` (
+  `userName` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(45) NULL,
+  PRIMARY KEY (`userName`))
+ENGINE = InnoDB
+select * from login;
